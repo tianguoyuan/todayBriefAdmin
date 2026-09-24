@@ -1,0 +1,47 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family:
+    'Inter',
+    'PingFang SC',
+    'Microsoft YaHei',
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0 0 0 / 15%);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0 0 0 / 25%);
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: rgb(255 255 255 / 15%);
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgb(255 255 255 / 25%);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

@@ -1,0 +1,11 @@
+node_modules
+dist
+.output
+.pnpm-store
+coverage
+.prettierignore
+pnpm-lock.yaml
+# 生成的类型文件，由对应插件重新生成时覆盖格式
+auto-imports.d.ts
+components.d.ts
+src/typed-router.d.ts
