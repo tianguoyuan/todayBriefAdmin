@@ -86,7 +86,7 @@
     <span class="text-xs text-gray-400 hidden md:inline">{{ APP_NAME }} · {{ APP_VERSION }} · 演示后台</span>
     <div ref="fontSizeRef" class="flex items-center justify-center relative" title="调整字体大小">
       <button
-        class="icon-btn text-xl"
+        class="icon-btn text-xl cursor-pointer"
         :title="fontSize === 'md' ? '调整字体大小' : '恢复默认字体'"
         type="button"
         @click="toggleFontSizeMenu"
@@ -129,7 +129,7 @@
         </div>
       </Transition>
     </div>
-    <button class="icon-btn text-xl" title="切换主题" type="button" @click="() => toggleDark()">
+    <button class="icon-btn text-xl cursor-pointer" title="切换主题" type="button" @click="() => toggleDark()">
       <div class="i-carbon-moon dark:i-carbon-sun" />
     </button>
     <RouterLink class="icon-btn text-xl relative" title="评论管理" to="/comments">

@@ -25,8 +25,7 @@
       if (auth.login(username.value, password.value)) {
         const redirect = typeof route.query.redirect === 'string' ? route.query.redirect : '/'
         router.replace(redirect)
-      }
- else {
+      } else {
         error.value = '用户名或密码错误'
       }
       submitting.value = false
@@ -114,7 +113,7 @@
     </div>
 
     <button
-      class="text-white/80 right-4 top-4 absolute hover:text-white"
+      class="text-white/80 cursor-pointer right-4 top-4 absolute hover:text-white"
       title="切换主题"
       type="button"
       @click="() => toggleDark()"
