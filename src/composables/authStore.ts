@@ -14,10 +14,16 @@ export const AUTH_PASSWORD = '123456'
 
 const KEY = `${STORAGE_PREFIX}auth`
 
-const authUser = useLocalStorage<AuthUser | null>(KEY, null)
+const authUser = useLocalStorage<AuthUser | null>(KEY, {
+  avatar: '',
+  email: '',
+  joinedAt: '',
+  role: '',
+  username: '',
+})
 
 export function useAuthStore() {
-  const isLoggedIn = computed(() => authUser.value !== null)
+  const isLoggedIn = computed(() => authUser.value !== null && authUser.value.username)
 
   function login(username: string, password: string) {
     if (username.trim() === AUTH_USERNAME && password === AUTH_PASSWORD) {

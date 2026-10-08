@@ -18,11 +18,16 @@
   const admin = computed(
     () =>
       auth.user.value ?? {
-        avatar: '管',
-        email: 'admin@todaybrief',
-        joinedAt: '2024-01-04',
-        role: '超级管理员',
-        username: '管理员',
+        avatar: '',
+        email: '',
+        joinedAt: '',
+        role: '',
+        username: '',
+        // avatar: '管',
+        // email: 'admin@todaybrief',
+        // joinedAt: '2024-01-04',
+        // role: '超级管理员',
+        // username: '管理员',
       },
   )
 
